@@ -12,7 +12,7 @@ function loginSubmit(event) {
   // 자동으로 새로고침이 되는데 그걸 막는게 event.preventDefault();
   // event.preventDefault();는 이벤트가 발생할때 브라우저가 기본적으로 수행하는 모든 동작
   // 을 막음
-  event.preventDefault();
+  // event.preventDefault();
 
   // loginForm.classList.add(HIDDEN_CLASS); 클레스를 추가.
   loginForm.classList.add(HIDDEN_CLASS);

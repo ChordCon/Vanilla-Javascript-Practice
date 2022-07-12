@@ -1,5 +1,8 @@
 * {
-  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hi Melody", cursive;
 }
 
 body {
@@ -9,8 +12,123 @@ body {
   min-height: 100vh;
 }
 
+#sayHelloUser {
+  margin: 40px 0;
+}
+
+#famous-saying #author {
+  padding: 15px;
+}
+
 .container {
   text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px -5px rgba(255, 255, 255, 0.5),
+    5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px -5px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 30px;
+  background-color: rgba(124, 124, 124, 0.474);
+}
+
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.container .card:hover .box {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .box .content h2 {
+  color: rgba(0, 0, 0, 0.02);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 2em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.container .card:hover .box .content h2 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container .card .box .content h3 {
+  color: rgb(203, 203, 203);
+  z-index: 1;
+  font-size: 1.8em;
+  transition: 0.5s;
+}
+
+.container .card .box .content li {
+  font-size: 1em;
+  font-weight: 300;
+  color: rgb(203, 203, 203);
+  z-index: 1;
+  transition: 0.5s;
+  list-style: none;
+  margin: 20px;
+}
+
+.container .card .box .content li span {
+  margin: 10px;
+}
+
+.container .card .box .content li button {
+  display: none;
+}
+
+.container .card:hover .box .content li button {
+  display: inline;
+}
+
+.container .card .box .content li button:hover {
+  background-color: greenyellow;
+}
+
+.container .card:hover .box .content h3,
+.container .card:hover .box .content li {
+  color: #fff;
+}
+
+.container .card .box .content input {
+  color: black;
+  z-index: 1;
+  transition: 0.5s;
+  padding: 5px;
+  border-radius: 10px;
+  display: none;
+}
+
+.container .card:hover .box .content input {
+  display: inline-block;
 }
 
 .hidden {
@@ -22,4 +140,75 @@ img {
   top: 0;
   left: 0;
   z-index: -10;
+}
+
+.weather-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  margin: 60px 10px;
+  font-size: 20px;
+  color: white;
+  transition: 0.5s;
+}
+
+.weather-info:hover {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+}
+
+#clock {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  margin: 10px;
+  transition: 0.5s;
+}
+#clock:hover {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+}
+
+#greeting {
+  font-size: 40px;
+  color: white;
+  transition: 0.5s;
+}
+#greeting:hover {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+}
+
+#famous-saying {
+  font-size: 25px;
+  color: white;
+  transition: 0.5s;
+}
+
+#famous-saying:hover {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+}
+
+#loginForm {
+  margin: 20px;
+}
+
+#loginForm input button {
+  color: black;
+}
+
+#loginForm input {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#loginForm button {
+  padding: 8px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+#loginForm button:hover {
+  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+  color: white;
 }

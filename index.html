@@ -4,26 +4,69 @@
     <title>JavaScript</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="container">
       <form id="loginForm" class="hidden">
-        <input style="color: black" required maxlength="15" type="text" />
-        <button style="color: black">로그인</button>
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="이름을 입력해주세요."
+        />
+        <button>로그인</button>
       </form>
 
       <h4 id="clock"></h4>
 
-      <h1 id="greeting" class="hidden"></h1>
+      <div class="weather-info">
+        <div id="city"></div>
+        <span id="weather"></span>
+        <span id="temp"></span>
+      </div>
+
+      <div id="sayHelloUser">
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+
+      <div id="toDo-card" class="card">
+        <div class="box">
+          <div class="content">
+            <h2>I can do it</h2>
+            <h3>ToDo List</h3>
+            <form id="todo-form">
+              <input
+                type="text"
+                required
+                id="toDoInput"
+                placeholder="Add ToDo"
+              />
+            </form>
+            <ul id="toDoList"></ul>
+          </div>
+        </div>
+      </div>
       <div>
-        <div id="quotes"></div>
-        <div id="author"></div>
+        <div id="famous-saying">
+          <div id="quotes"></div>
+          <div id="author"></div>
+        </div>
       </div>
     </div>
+
+    <!-- js파일을 여기서 스트립트로 불러오지않으면 아무 의미 없음! -->
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>
