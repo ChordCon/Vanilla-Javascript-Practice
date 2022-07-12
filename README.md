@@ -11,6 +11,9 @@ Vanilla Javascript를 이용한 웹사이트 만들기.
 ![메인화면](https://user-images.githubusercontent.com/104089770/178491596-2a406e30-a1ed-4660-a78d-2bcff430b4fc.png)
 
 투두리스트 반응형
+
+체크를 클릭하면 클릭한 체크에 해당하는 투두가 삭제됩니다.
+
 ![투두반응형](https://user-images.githubusercontent.com/104089770/178491681-b0730f11-27d7-4737-bf22-e87abb9307fb.png)
 
 유저이름, 명언, 시간, 날씨 반응형
