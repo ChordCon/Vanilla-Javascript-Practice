@@ -1,4 +1,6 @@
 Vanilla Javascript를 이용한 웹사이트 만들기.
+Learn with Nomad Coders
+
 
 배경화면과 명언은 접속과 새로고침시 랜덤으로 바뀝니다.
 
